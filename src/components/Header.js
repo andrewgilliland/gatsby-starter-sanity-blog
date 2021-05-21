@@ -17,7 +17,7 @@ export default function Header() {
   }
 
   return (
-    <header className="bg-blue-600 dark:bg-blue-800 relative">
+    <header className="bg-blue-600 relative">
       <div className="text-gray-50 px-3 py-5 flex justify-between items-center mx-auto max-w-5xl relative z-10">
         <Link to="/">
           <Logo />
