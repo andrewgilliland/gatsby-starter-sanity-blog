@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "gatsby-starter-sanity-blog",
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     {
       resolve: "gatsby-source-sanity",
@@ -11,12 +12,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-image",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "",
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-google-analytics",
+    //   options: {
+    //     trackingId: "",
+    //   },
+    // },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
@@ -35,5 +36,6 @@ module.exports = {
       },
       __key: "images",
     },
+    "gatsby-plugin-postcss",
   ],
 };
