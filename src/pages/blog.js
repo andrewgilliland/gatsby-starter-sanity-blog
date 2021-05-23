@@ -1,4 +1,5 @@
 import * as React from "react";
+import SEO from "../components/SEO";
 import { graphql } from "gatsby";
 import BlogGrid from "../components/BlogGrid";
 
@@ -6,6 +7,8 @@ const BlogPage = ({ data }) => {
   const posts = data.posts.nodes;
 
   return (
+    <>
+    <SEO title="Blog" />
     <main className="flex flex-col items-center justify-center mt-10">
       <title>Blog Page</title>
       <h1 className="text-5xl text-gray-900">Blog</h1>
@@ -18,6 +21,7 @@ const BlogPage = ({ data }) => {
       </p>
       <BlogGrid posts={posts} />
     </main>
+    </>
   );
 };
 

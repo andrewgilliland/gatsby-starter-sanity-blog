@@ -10,7 +10,7 @@ export default function Layout({ children }) {
     >
       <Header />
       <div className="bg-gray-50">
-        <div className="max-w-5xl mx-auto">{children}</div>
+        <div className="max-w-5xl mx-auto px-4 lg:px-0">{children}</div>
       </div>
       <Footer />
     </div>
