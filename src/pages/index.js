@@ -1,4 +1,5 @@
 import * as React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import SEO from "../components/SEO";
 
 const IndexPage = () => {
@@ -15,6 +16,16 @@ const IndexPage = () => {
             😎
           </span>
         </p>
+        <div className="mt-10">
+          <StaticImage
+            src="../images/robot-1.jpg"
+            alt="A robot"
+            placeholder="tracedSVG"
+            layout="fixed"
+            width={300}
+            height={200}
+          />
+        </div>
       </main>
     </>
   );

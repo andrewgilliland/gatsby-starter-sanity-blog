@@ -88,13 +88,21 @@ export default function Header() {
               </svg>
             </button>
           </div>
-          <MobileNav toggle={toggle} isOpen={isOpen} />
+          <MobileNav
+            toggle={toggle}
+            toggleKeyPress={toggleKeyPress}
+            isOpen={isOpen}
+          />
           <div className="text-blue-600 bg-gray-100 flex justify-center py-5 font-semibold text-lg">
             Learn More
           </div>
         </div>
       </div>
-      <Overlay toggle={toggle} isOpen={isOpen} />
+      <Overlay
+        toggle={toggle}
+        toggleKeyPress={toggleKeyPress}
+        isOpen={isOpen}
+      />
     </header>
   );
 }
