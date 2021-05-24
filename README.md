@@ -30,7 +30,7 @@ GATSBY_SANITY_PROJECT_ID=""
 GATSBY_SANITY_DATASET=""
 ```
 
-The value for GATSBY_SANITY_PROJECT_ID will be found at [manage.sanity.io]https://manage.sanity.io/) when you select the newly created project.
+The value for GATSBY_SANITY_PROJECT_ID will be found at [manage.sanity.io](https://manage.sanity.io/) when you select the newly created project.
 
 The value for GATSBY_SANITY_DATASET will equal `production` if you started with the default. If you have a different dataset you would like to use, select the dataset tab under the project to view the names of all datasets for reference.
 
